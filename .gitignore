@@ -1,0 +1,21 @@
+# Python rác
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Dữ liệu tạm của Agent (Cực kỳ quan trọng để đảm bảo riêng tư)
+checkpoints/
+debug/
+*.png
+*.jpg
+*.jpeg
+
+# Cấu hình cá nhân
+configs/custom_settings.yaml
+
+# Các folder của IDE
+.vscode/
+.idea/
+.gemini/

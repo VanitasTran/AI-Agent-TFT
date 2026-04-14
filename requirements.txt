@@ -1,0 +1,11 @@
+opencv-python
+numpy
+mss
+pyautogui
+pynput
+easyocr
+torch
+stable-baselines3
+ultralytics
+loguru
+pyyaml

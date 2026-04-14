@@ -1,0 +1,36 @@
+screen_resolution: [2400, 1080]
+
+regions:
+  # Vùng túi vàng dưới cùng bên phải
+  gold: [2050, 840, 220, 180]
+  
+  # Nút Roll (Đổi lại) - To hơn một chút để bấm chuẩn tâm
+  btn_roll: [2040, 560, 250, 250]
+  
+  # Nút Mua KN và thông tin Level/XP
+  btn_xp: [60, 780, 250, 250]
+  level_region: [120, 930, 60, 60]  # Con số level nhỏ trong vòng tròn
+  xp_region: [170, 875, 100, 40]    # Số 4/10
+  
+  # Máu (HP) - Quét ở danh sách bên phải (Vị trí người chơi thường đổi chỗ nên cần quét list)
+  hp_sidebar_region: [2250, 0, 150, 1000] 
+
+  # 5 ô tướng ở hàng TRÊN
+  shop_slots:
+    - [245, 45, 315, 365]   # Ô 1 (Blitzcrank trong ảnh)
+    - [575, 45, 315, 365]   # Ô 2 (Gangplank)
+    - [905, 45, 315, 365]   # Ô 3 (Ashe)
+    - [1235, 45, 315, 365]  # Ô 4 (Anivia)
+    - [1565, 45, 315, 365]  # Ô 5 (Cho'Gath)
+
+  # Hàng đợi (Bench) ở phía dưới
+  bench_slots:
+    - [530, 910, 150, 120]
+    - [700, 910, 140, 120]
+    - [840, 910, 140, 120]
+    - [990, 910, 140, 120]
+    - [1140, 910, 140, 120]
+    - [1280, 910, 140, 120]
+    - [1420, 910, 140, 120]
+    - [1570, 910, 140, 120]
+    - [1720, 910, 140, 120]
