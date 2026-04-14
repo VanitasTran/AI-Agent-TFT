@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/VanitasTran/AI-Agent-TFT/main/assets/logo.png" width="200" alt="TFT AI Agent Logo">
+  <img src="https://raw.githubusercontent.com/VanitasTran/AI-Agent-TFT/main/assets/logo.png" width="250" alt="TFT AI Agent Logo">
   <h1>🎮 Autonomous TFT AI Agent</h1>
   <p><b>Hệ thống AI tự động hóa hoàn toàn việc chơi Teamfight Tactics thông qua Computer Vision & LLM</b></p>
 
