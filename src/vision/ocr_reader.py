@@ -20,10 +20,24 @@ class OCRReader:
         else:
             crop = image_np
         
-        results = self.reader.readtext(crop)
-        for (_, text, conf) in results:
-            # Làm sạch text để lấy số
-            clean_text = ''.join(filter(str.isdigit, text))
-            if clean_text:
-                return int(clean_text)
+        # Tối ưu hóa tốc độ cực đại cho EasyOCR bằng cách giới hạn bộ ký tự chỉ quét số (allowlist)
+        # và tắt tính năng trả về tọa độ hộp chi tiết (detail=0) để giảm tải tính năng phân đoạn ảnh
+        try:
+            results = self.reader.readtext(crop, allowlist='0123456789', detail=0)
+            for text in results:
+                clean_text = ''.join(filter(str.isdigit, text))
+                if clean_text:
+                    return int(clean_text)
+        except Exception as e:
+            logging.error(f"Lỗi tối ưu EasyOCR: {e}")
+            # Phương án dự phòng cơ bản nếu gặp lỗi phiên bản EasyOCR cũ
+            try:
+                results = self.reader.readtext(crop)
+                for (_, text, conf) in results:
+                    clean_text = ''.join(filter(str.isdigit, text))
+                    if clean_text:
+                        return int(clean_text)
+            except:
+                pass
         return None
+

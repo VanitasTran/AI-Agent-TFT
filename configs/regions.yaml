@@ -34,3 +34,42 @@ regions:
     - [1420, 910, 140, 120]
     - [1570, 910, 140, 120]
     - [1720, 910, 140, 120]
+
+  # Khu vực bán tướng bằng cách kéo thả vào góc
+  sell_zone_left: [100, 910, 150, 120]
+  sell_zone_right: [2250, 910, 150, 120]
+
+  # Bàn cờ (Board 4x7 Hex Grid) cho việc bày binh bố trận
+  board_grid:
+    start_x: 600
+    start_y: 450
+    dx: 180
+    dy: 100
+    row_offsets: [0, 90, 0, 90]
+
+  # 3 lựa chọn chúc phúc của Thần (Stage 2-4, 3-4, 4-4)
+  god_blessing_slots:
+    - [400, 540]
+    - [1200, 540]
+    - [2000, 540]
+
+  # 3 lõi công nghệ chọn nâng cấp (Augments)
+  augment_slots:
+    - [600, 540]
+    - [1200, 540]
+    - [1800, 540]
+
+  # 10 ô chứa trang bị dự bị ở góc dưới bên trái để kéo ghép đồ
+  item_slots:
+    - [120, 680]
+    - [180, 680]
+    - [240, 680]
+    - [300, 680]
+    - [360, 680]
+    - [420, 680]
+    - [480, 680]
+    - [540, 680]
+    - [600, 680]
+    - [660, 680]
+
+
